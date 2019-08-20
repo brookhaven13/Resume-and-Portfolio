@@ -1,0 +1,268 @@
+body {
+    font-size: 16px;
+    color: #313131;
+    background-color: #f6f6f6;
+    letter-spacing: 1px;
+    font-weight: 100;
+}
+
+/*----Cover & Header---*/
+.overlay {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 3;
+    background-color: rgba(3, 3, 3, 0.6);
+}
+
+.title-message {
+    position: absolute;
+    width: 100%;
+    height: 250px;
+    top: 50%;
+    z-index: 5;
+    text-align: center;
+    margin-top: -125px;
+}
+
+.main {
+    color: #fff;
+    text-shadow: 0px 3px 6px rgba(0, 0, 0, 0.6);
+    font-weight: 100;
+    letter-spacing: 7px;
+    font-family: 'Lexend Mega';
+}
+
+.title-message .heading {
+    color: #fff;
+    text-shadow: 0px 3px 6px rgba(0, 0, 0, 0.8);
+    font-weight: 100;
+    letter-spacing: 7px;
+}
+
+.title-message .heading .name-2 {
+    font-family: 'Noto Sans TC';
+    font-size: 50px;
+    font-weight: 100;
+    display: inline;
+}
+
+.name-1 {
+    font-family: 'Noto Sans TC';
+    font-size: 30px;
+    font-weight: 100;
+    display: inline;
+
+}
+
+.title-message .heading .main {
+    font-size: 50px;
+}
+
+.title-message .heading .sub-1 {
+    font-size: 28px;
+    text-align: right;
+    padding-top: 10px;
+}
+
+.title-message .heading .sub-2 {
+    font-size: 28px;
+    text-align: left;
+    padding-top: 10px;
+}
+
+/*---Section Setting---*/
+
+.section {
+    padding: 100px 0;
+    font-family: 'Noto Sans TC';
+}
+
+.part-number {
+    display: inline;
+    padding: 0 15px;
+    color: #BEC7D5;
+    font-family: 'Montserrat'
+}
+
+/*---About Me---*/
+
+.cite {
+    float: right;
+    font-weight: 100;
+}
+
+.about-image {
+    border-radius: 50%;
+    max-width: 50%;
+    margin: -40px 40px 10px 0;
+    float: right;
+}
+
+.state {
+    padding: 40px 0 20px 15px;
+}
+
+.state .span-2-of-3 {
+    padding: 8px 0 0;
+    font-weight: 400;
+}
+
+
+/*--.line{
+    width: 650px;
+    height: 40px;
+    border-bottom: 2px solid #555555;
+    position: absolute;
+    }
+--/
+
+/*--Styling social icons--*/
+.social-links {
+    list-style: none;
+}
+
+.social-links li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+
+.social-links li a:link,
+.social-links li a:visited {
+    text-decoration: none;
+    border: 0;
+    color: #888;
+}
+
+.social-links li a:hover,
+.social-links li a:active {
+    color: #ddd;
+}
+
+.social-links a:link,
+.socail-links a:visited {
+    font-size: 170%;
+}
+
+.ion-logo-facebook,
+.ion-logo-github,
+.ion-logo-linkedin,
+.ion-md-mail {
+    transition: color 0.3s;
+}
+
+.ion-logo-facebook:hover {
+    color: #4267B2;
+}
+
+.ion-logo-github:hover {
+    color: #211f1f;
+}
+
+.ion-logo-linkedin:hover {
+    color: #007bb5;
+}
+
+.ion-md-mail:hover {
+    color: #ea4335;
+}
+
+/*--- 自傳 ---*/
+.section-bio{
+    background-image: linear-gradient(to bottom, rgb(72, 126, 176) 60%, rgb(72, 126, 176, 0.7) 100%);
+    color: #fff;
+}
+
+.bio-main {
+    padding: 0 0 10px 0;
+    font-family: 'Lato', 'Noto Sans TC';
+    font-weight: 700;
+    letter-spacing: 8px;
+}
+
+.bio-sub {
+    padding: 0 200px;
+    text-align: left;
+}
+
+
+/*--- 技能 ---*/
+
+.skill-section {
+    background-image: radial-gradient(rgb(46, 50, 60, 0.9) 0%,rgb(46, 50, 60, 0.9) 100%), url(/resources/img/slide4-min.jpg);
+    color: #fff;
+}
+
+.skill-title {
+    padding: 30px 0 0 0;
+}
+
+.owl-theme {
+    padding: 20px 0 10px 0;
+}
+
+.chart {
+    position: relative;
+    width: 152px;
+    height: 152px;
+    display: inline-block;
+    text-align: center;
+}
+
+.chart canvas {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.chart .percent {
+    color: #ed7575;  
+    line-height: 152px;
+    display: inline-block;
+    font-size: 36px;
+    font-weight: 300;
+    font-family: 'Montserrat', 'Open Sans';
+}
+
+.chart .percent::after {
+    content: '%';
+}
+
+
+.skill-title{
+    color: #BEC7D5;
+    font-family: 'Lato';
+    font-weight: 300;
+    font-size: 22px;
+}
+
+.skill-sub {
+    color: #BEC7D5;
+    font-weight: 100;
+}
+
+
+/*--顯示圖片左右兩邊按鍵可以上一個圖片或下一個圖片
+.slides-navigation {
+    z-index: 6;
+}
+
+.slides-navigation .prev, 
+.slides-navigation .next {
+    width: 47px;
+    height: 47px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.slides-navigation a.prev {
+    left: 20px;
+    background-image: url(../../vendors/icons/previous.png);
+}
+
+.slides-navigation a.next {
+    right: 20px;
+    background-image: url(../../vendors/icons/next.png);
+}
+*/
