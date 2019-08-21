@@ -28,4 +28,7 @@ $(document).ready(function () {
             $(this.el).find('.percent').text(Math.round(percent));
         }
     });
+    
+    
+    
 });

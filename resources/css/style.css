@@ -174,7 +174,7 @@ body {
     color: #fff;
 }
 
-.bio-main {
+.main-title {
     padding: 0 0 10px 0;
     font-family: 'Lato', 'Noto Sans TC';
     font-weight: 700;
@@ -182,7 +182,6 @@ body {
 }
 
 .bio-sub {
-    padding: 0 200px;
     text-align: left;
 }
 
