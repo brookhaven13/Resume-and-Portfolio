@@ -169,7 +169,7 @@ body {
 }
 
 /*--- 自傳 ---*/
-.section-bio{
+.section-bio {
     background-image: linear-gradient(to bottom, rgb(72, 126, 176) 60%, rgb(72, 126, 176, 0.7) 100%);
     color: #fff;
 }
@@ -189,7 +189,7 @@ body {
 /*--- 技能 ---*/
 
 .skill-section {
-    background-image: radial-gradient(rgb(46, 50, 60, 0.9) 0%,rgb(46, 50, 60, 0.9) 100%), url(/resources/img/slide4-min.jpg);
+    background-image: radial-gradient(rgb(46, 50, 60, 0.9) 0%, rgb(46, 50, 60, 0.9) 100%), url(/resources/img/slide4-min.jpg);
     color: #fff;
 }
 
@@ -216,7 +216,7 @@ body {
 }
 
 .chart .percent {
-    color: #ed7575;  
+    color: #ed7575;
     line-height: 152px;
     display: inline-block;
     font-size: 36px;
@@ -229,7 +229,7 @@ body {
 }
 
 
-.skill-title{
+.skill-title {
     color: #BEC7D5;
     font-family: 'Lato';
     font-weight: 300;
@@ -265,3 +265,34 @@ body {
     background-image: url(../../vendors/icons/next.png);
 }
 */
+
+.owl-navigation {
+    z-index: 6;
+}
+
+.owl-navigation .owl-prev,
+.owl-navigation .owl-next {
+    width: 32px;
+    height: 32px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.owl-navigation a.owl-prev {
+    left: 40%;
+    background-image: url(../../vendors/icons/previous.png);
+    cursor: pointer;
+}
+
+.owl-navigation a.owl-next {
+    right: 40%;
+    background-image: url(../../vendors/icons/next.png);
+    cursor: pointer;
+}
+
+.owl-navigation .owl-prev,
+.owl-navigation .owl-next {
+    position: absolute;
+}
+
+

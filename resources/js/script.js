@@ -14,21 +14,52 @@ $(document).ready(function () {
     });
 
     $(document).ready(function () {
-        $('.owl-carousel').owlCarousel();
+        $('.owl-carousel').owlCarousel({
+            loop: false,
+            margin: 10,
+            responsive: {
+                0: {
+                    items: 1
+                },
+                600: {
+                    items: 3
+                },
+                1000: {
+                    items: 5,
+                    loop: false
+                }
+            }
+        })
     });
 
-    $('.chart').easyPieChart({
-        easing: 'easeInOut',
-        barColor: '#ed7575',
-        trackColor: false,
-        scaleColor: false,
-        lineWidth: 4,
-        size: 152,
-        onStep: function(from, to , percent){
-            $(this.el).find('.percent').text(Math.round(percent));
-        }
+    $(".owl-prev").click(function () {
+        $('.owl-carousel').trigger('prev.owl.carousel');
+    });
+
+    $(".owl-next").click(function () {
+        $('.owl-carousel').trigger('next.owl.carousel');
     });
     
-    
-    
+
+    var skillTopOffset = $(".skill-section").offset().top;
+
+    //When window scrolled, it will excute the easy pie chart code
+    $(window).scroll(function () {
+        if (window.pageYOffset > skillTopOffset - $(window).height() + 200) {
+
+            $('.chart').easyPieChart({
+                easing: 'easeInOut',
+                barColor: '#ed7575',
+                trackColor: false,
+                scaleColor: false,
+                lineWidth: 4,
+                size: 152,
+                onStep: function (from, to, percent) {
+                    $(this.el).find('.percent').text(Math.round(percent));
+                }
+            });
+        }
+
+    });
+
 });

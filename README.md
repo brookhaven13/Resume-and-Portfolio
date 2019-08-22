@@ -1,2 +1,3 @@
 # Resume-and-Portfolio
- My Resume and Portfolio Webpage
+ Harley Lin's Resume and Portfolio Website codes.
+ There will be only Chinese version. 
