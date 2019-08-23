@@ -1,0 +1,116 @@
+/*------------------------ 經驗Timeline ----------------------*/
+.section-timeline {
+    margin-top: 150px;
+}
+
+.timeline {
+    font-family: 'Montserrat', 'Lato', 'Noto Sans TC';
+    position: relative;
+    margin: 50px auto;
+    padding: 40px 0;
+    width: 1000px;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    width: 2px;
+    height: 86%;
+    background-color: #BEC7D5;
+}
+
+
+.timeline ul {
+    margin: 0;
+    padding: 0;
+}
+
+.timeline ul li {
+    position: relative;
+    list-style: none;
+    width: 50%;
+    padding: 18px 40px 30px;
+
+}
+
+.timeline ul li:nth-child(odd) {
+    float: left;
+    text-align: right;
+    clear: both;
+}
+
+.timeline ul li:nth-child(odd)::before {
+    content: '';
+    position: absolute;
+    top: 24px;
+    right: -8px;
+    width: 14px;
+    height: 14px;
+background-color: rgba(194, 232, 136, 1);
+    border-radius: 50%;
+    box-shadow: 0 0 0 3px rgba(194, 232, 136, 0.2);
+}
+
+.timeline ul li:nth-child(even) {
+    float: right;
+    text-align: left;
+    clear: both;
+}
+
+
+.timeline ul li:nth-child(even)::before {
+    content: '';
+    position: absolute;
+    top: 24px;
+    left: -6px;
+    width: 14px;
+    height: 14px;
+    background-color: rgba(194, 232, 136, 1);
+    border-radius: 50%;
+    box-shadow: 0 0 0 3px rgba(194, 232, 136, 0.2);
+}
+
+.timeline-content {
+    margin: 0 0 10px 0;
+}
+
+.timeline-title {
+    margin: 0;
+    padding: 0;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.timeline-info {
+    font-weight: 400;
+}
+
+.timeline .time h4 {
+    font-size: 14px;
+    font-weight: 700;
+    margin: 0;
+}
+
+.timeline ul li:nth-child(odd) .time {
+    position: absolute;
+    top: 14px;
+    right: -215px;
+    padding: 8px 16px;
+    color: #C2E888;
+}
+
+.timeline ul li:nth-child(even) .time {
+    position: absolute;
+    top: 14px;
+    left: -215px;
+    padding: 8px 16px;
+    color: #C2E888;
+}
+
+.timeline-details {
+    font-family: 'Lato','Noto Sans TC';
+    text-align: left;
+    font-size: 15px;
+}
+

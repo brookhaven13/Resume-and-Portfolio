@@ -31,6 +31,18 @@ body {
     font-weight: 100;
     letter-spacing: 7px;
     font-family: 'Lexend Mega';
+    display: inline;
+}
+
+.main-eng-name {
+    color: #fff;
+    text-shadow: 0px 3px 6px rgba(0, 0, 0, 0.6);
+    font-weight: 100;
+    letter-spacing: 7px;
+    font-family: 'Lexend Mega';
+    display: inline;
+    font-size: 52px;
+    color: #C2E888;
 }
 
 .title-message .heading {
@@ -52,7 +64,6 @@ body {
     font-size: 30px;
     font-weight: 100;
     display: inline;
-
 }
 
 .title-message .heading .main {
@@ -81,7 +92,7 @@ body {
 .part-number {
     display: inline;
     padding: 0 15px;
-    color: #BEC7D5;
+    color: #C2E888;
     font-family: 'Montserrat'
 }
 
@@ -168,17 +179,18 @@ body {
     color: #ea4335;
 }
 
-/*--- 自傳 ---*/
+/*------------------------ 自傳 ----------------------*/
 .section-bio {
-    background-image: linear-gradient(to bottom, rgb(72, 126, 176) 60%, rgb(72, 126, 176, 0.7) 100%);
+        background-image: linear-gradient(to bottom ,rgba(46, 50, 60, 1) 0%, rgba(46, 50, 60, 0.8) 100%), url('/resources/img/slide5.jpg');
     color: #fff;
 }
 
 .main-title {
     padding: 0 0 10px 0;
-    font-family: 'Lato', 'Noto Sans TC';
+    font-family: 'Montserrat', 'Noto Sans TC';
     font-weight: 700;
     letter-spacing: 8px;
+    color: #BEC7D5;
 }
 
 .bio-sub {
@@ -186,10 +198,11 @@ body {
 }
 
 
-/*--- 技能 ---*/
+
+/*----------------------- 技能 ------------------------*/
 
 .skill-section {
-    background-image: radial-gradient(rgb(46, 50, 60, 0.9) 0%, rgb(46, 50, 60, 0.9) 100%), url(/resources/img/slide4-min.jpg);
+    background-image: radial-gradient(rgb(46, 50, 60, 0.9) 0%, rgb(46, 50, 60, 0.9) 100%), url(/resources/img/slide4.jpg);
     color: #fff;
 }
 
@@ -241,30 +254,7 @@ body {
     font-weight: 100;
 }
 
-
-/*--顯示圖片左右兩邊按鍵可以上一個圖片或下一個圖片
-.slides-navigation {
-    z-index: 6;
-}
-
-.slides-navigation .prev, 
-.slides-navigation .next {
-    width: 47px;
-    height: 47px;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
-
-.slides-navigation a.prev {
-    left: 20px;
-    background-image: url(../../vendors/icons/previous.png);
-}
-
-.slides-navigation a.next {
-    right: 20px;
-    background-image: url(../../vendors/icons/next.png);
-}
-*/
+/*----- 技能左右鍵 ------*/
 
 .owl-navigation {
     z-index: 6;
@@ -296,3 +286,26 @@ body {
 }
 
 
+/*--顯示圖片左右兩邊按鍵可以上一個圖片或下一個圖片
+.slides-navigation {
+    z-index: 6;
+}
+
+.slides-navigation .prev, 
+.slides-navigation .next {
+    width: 47px;
+    height: 47px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.slides-navigation a.prev {
+    left: 20px;
+    background-image: url(../../vendors/icons/previous.png);
+}
+
+.slides-navigation a.next {
+    right: 20px;
+    background-image: url(../../vendors/icons/next.png);
+}
+*/
