@@ -86,7 +86,7 @@ body {
 
 .section {
     padding: 100px 0;
-    font-family: 'Noto Sans TC';
+    font-family: 'Lato', 'Noto Sans TC';
 }
 
 .part-number {
@@ -96,29 +96,61 @@ body {
     font-family: 'Montserrat'
 }
 
-/*---About Me---*/
+/*-------------- SELF INTRO  ------------*/
 
-.cite {
-    float: right;
-    font-weight: 100;
+
+.section-self-intro {
+    padding: 30px 0;
+    background-image: linear-gradient(to bottom, rgba(227, 227, 227, 0.5), rgba(227, 227, 227, 0.8)100%), url('/resources/img/slide6.jpg');
+      background-repeat: no-repeat;
+  background-attachment: fixed;
+    color: #6f6f6f;
 }
+
+.self-intro-content {
+    font-family: 'Lato', 'Noto Sans TC';
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    padding: 40px 20px;
+    background-color: rgba(255, 255, 255, 1);
+}
+
 
 .about-image {
+    position: relative;
     border-radius: 50%;
-    max-width: 50%;
-    margin: -40px 40px 10px 0;
-    float: right;
+    margin-left: 25%;
+    max-width: 60%;
+    box-shadow: 0 0 0 3px rgba(194, 232, 136, 0.4);
 }
 
-.state {
-    padding: 40px 0 20px 15px;
+
+.intro h5 {
+    padding: 10px 0 0;
+    font-weight: 100;
+    font-size: 15px;
 }
 
-.state .span-2-of-3 {
-    padding: 8px 0 0;
+.intro p {
+    padding-top: 20px;
     font-weight: 400;
 }
 
+.intro .quote {
+    padding-left: 10px;
+    padding-bottom: 60px;
+    letter-spacing: 2px;
+}
+
+.cite {
+    float: right;
+    font-weight: 400;
+}
+
+.download-cv {}
 
 /*--.line{
     width: 650px;
@@ -128,60 +160,10 @@ body {
     }
 --/
 
-/*--Styling social icons--*/
-.social-links {
-    list-style: none;
-}
-
-.social-links li {
-    display: inline-block;
-    margin-right: 10px;
-}
-
-
-.social-links li a:link,
-.social-links li a:visited {
-    text-decoration: none;
-    border: 0;
-    color: #888;
-}
-
-.social-links li a:hover,
-.social-links li a:active {
-    color: #ddd;
-}
-
-.social-links a:link,
-.socail-links a:visited {
-    font-size: 170%;
-}
-
-.ion-logo-facebook,
-.ion-logo-github,
-.ion-logo-linkedin,
-.ion-md-mail {
-    transition: color 0.3s;
-}
-
-.ion-logo-facebook:hover {
-    color: #4267B2;
-}
-
-.ion-logo-github:hover {
-    color: #211f1f;
-}
-
-.ion-logo-linkedin:hover {
-    color: #007bb5;
-}
-
-.ion-md-mail:hover {
-    color: #ea4335;
-}
 
 /*------------------------ 自傳 ----------------------*/
 .section-bio {
-        background-image: linear-gradient(to bottom ,rgba(46, 50, 60, 1) 0%, rgba(46, 50, 60, 0.8) 100%), url('/resources/img/slide5.jpg');
+    background-image: linear-gradient(to bottom, rgba(46, 50, 60, 1) 0%, rgba(46, 50, 60, 0.8) 100%), url('/resources/img/slide5.jpg');
     color: #fff;
 }
 
@@ -202,7 +184,7 @@ body {
 /*----------------------- 技能 ------------------------*/
 
 .skill-section {
-    background-image: radial-gradient(rgb(46, 50, 60, 0.9) 0%, rgb(46, 50, 60, 0.9) 100%), url(/resources/img/slide4.jpg);
+    background-image: radial-gradient(rgb(46, 50, 60, 0.8) 0%, rgb(46, 50, 60, 1) 100%), url(/resources/img/slide4.jpg);
     color: #fff;
 }
 
@@ -309,3 +291,57 @@ body {
     background-image: url(../../vendors/icons/next.png);
 }
 */
+
+
+
+
+/*----------------- Styling social icons -------------*/
+.social-links {
+    list-style: none;
+}
+
+.social-links li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+
+.social-links li a:link,
+.social-links li a:visited {
+    text-decoration: none;
+    border: 0;
+    color: #888;
+}
+
+.social-links li a:hover,
+.social-links li a:active {
+    color: #ddd;
+}
+
+.social-links a:link,
+.socail-links a:visited {
+    font-size: 170%;
+}
+
+.ion-logo-facebook,
+.ion-logo-github,
+.ion-logo-linkedin,
+.ion-md-mail {
+    transition: color 0.3s;
+}
+
+.ion-logo-facebook:hover {
+    color: #4267B2;
+}
+
+.ion-logo-github:hover {
+    color: #211f1f;
+}
+
+.ion-logo-linkedin:hover {
+    color: #007bb5;
+}
+
+.ion-md-mail:hover {
+    color: #ea4335;
+}
