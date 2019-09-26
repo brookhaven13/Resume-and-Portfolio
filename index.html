@@ -12,6 +12,7 @@
     <link rel="stylesheet" type="text/css" href="vendors/css/owl.carousel.min.css">
     <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
 
     <link rel="stylesheet" type="text/css" href="resources/css/timeline.css">
     <link rel="stylesheet" type="text/css" href="resources/css/style.css">
@@ -98,11 +99,11 @@
                         <li><a href="https://www.facebook.com/profile.php?id=100000247530470" title="Facebook" target="_blank"><i class="icon ion-logo-facebook"></i></a></li>
                         <li><a href="mailto:yu.h.lin1991@gmail.com" title="gmail"><i class="icon ion-md-mail"></i></a></li>
                     </ul>
-                    
+
                 </div>
             </div>
             <div class="download-cv text-center">
-                <a href="/resources/files/Harley-Lin-CV-RESUME.pdf" downlaod>DOWNLOAD MY CV</a>
+                <a class="download-link" href="/resources/files/Harley-Lin-CV-RESUME.pdf" target="_blank" downlaod>DOWNLOAD MY CV</a>
             </div>
         </div>
     </div>
@@ -212,7 +213,7 @@
 
 
 
-    <!--  技能  -->
+    <!-------------------  技能  ------------------>
     <div id="skills" class="section skill-section">
         <div class="container">
             <div class="row">
@@ -238,7 +239,7 @@
                             <span class="chart" data-percent="85">
                                 <span class="percent">85</span>
                             </span>
-                            <p class="skill-title">Blender/Zbrush</p>
+                            <p class="skill-title">Blender</p>
                             <p class="skill-sub">遊戲3D模型</p>
                         </div>
 
@@ -296,6 +297,161 @@
     </div>
 
 
+
+
+    <!-------------------  PORTFOLIO  ------------------>
+
+    <div id="portfolio" class="section">
+        <div class="container">
+            <div class="row">
+                <div class="span-12-of-12 portfolio-heading">
+                    <h2 class="main-title">
+                        <p class="part-number">04</p>PORTFOLIO
+                    </h2>
+                </div>
+
+                <div class="filter">
+                    <ul id="filters">
+                        <li><a href="#" data-filter="*" class="current">ALL</a></li>
+                        <li><a href="#" data-filter=".games">GAMES</a></li>
+                        <li><a href="#" data-filter=".websites">WEBSITES</a></li>
+                    </ul>
+                </div>
+
+                <div class="items-container">
+                    <ul class="items row">
+                        <li class="games span-3-of-12">
+                            <a data-fancybox data-src="#hidden-content-1" href="javascript:;">
+                                <img class="thumbnails" src="resources/img/portfolio/thumbnails/escape-to-freedom-thumbnail.png">
+                            </a>
+                        </li>
+                        <div class="portfolio-infobox" style="display: none;" id="hidden-content-1">
+                            <img src="resources/img/portfolio/escape-to-freedom.gif">
+                            <h2>GAME: Escape to Freedom</h2>
+                            <p>利用Unity工具使用C#編寫程式製作類似馬力歐的橫向冒險遊戲</p>
+                            <p>美術素材是使用Unity Store上的付費素材</p>
+                            <p>背景故事：主角某日遭到怪獸的襲擊被綁架到怪物的地下巢穴，主角必須要趕快逃出這地牢否則將成為怪物的晚餐</p>
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        <ion-icon name="logo-github"></ion-icon>
+                                        <p>Github程式碼</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <ion-icon name="link"></ion-icon>
+                                        <p>遊戲連結</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+
+
+                        <li class="websites span-3-of-12">
+                            <a data-fancybox data-src="#hidden-content-2" href="javascript:;">
+                                <img class="thumbnails" src="resources/img/portfolio/thumbnails/cloud-closet-website-thumbnail.jpg" width="300">
+                            </a>
+                        </li>
+                        <div class="portfolio-infobox" style="display: none;" id="hidden-content-2">
+                            <img src="resources/img/portfolio/cloud-closet-website.jpg">
+                            <h2>網站：雲端衣櫥管理系統</h2>
+                            <h5>應用程式構思</h5>
+                            <p>據說,女人的衣櫥永遠少 一件衣服……其實不是少一件衣服，是因為買太多衣服而忘了衣櫥內已有哪些衣服了</p>
+                            <p>有了雲端衣櫥就可一目了然! 只要在買新衣服時，打開手機就能看看自己是否已經有類似的衣服，就不會白白花冤忘錢囉! </p>
+                            <h5>使用技術</h5>
+                            <p>使用HTML5 ＋ CSS3 ＋ jQuery＋ JavaScript ＋ Bootstrap 實作網頁前端頁面</p>
+                            <p>使用Azure + MS SQL實作網頁後端雲端資料庫</p>
+                            <p>使用ASP.NET/C# 實作網站中端讓網頁與資料庫互相溝通</p>
+                            <ul>
+                                <li>
+                                    <a href="https://www.youtube.com/watch?v=2xDUGDVhdhc">
+                                        <ion-icon name="logo-youtube"></ion-icon>
+                                        <p>demo影片</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="http://cloud-closet.azurewebsites.net/Home.aspx">
+                                        <ion-icon name="link"></ion-icon>
+                                        <p>網站連結</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+
+
+                        <li class="websites span-3-of-12">
+                            <a data-fancybox data-src="#hidden-content-3" href="javascript:;">
+                                <img class="thumbnails" src="resources/img/portfolio/mr-pepper-website.jpg" width="400">
+                            </a>
+                        </li>
+                        <div class="portfolio-infobox" style="display: none;" id="hidden-content-3">
+                            <img src="resources/img/portfolio/mr-pepper-website.jpg">
+                            <h2>網站：餐廳網站設計</h2>
+                            <h5>應用程式構思</h5>
+                            <p>結合自己的英文與網頁程式的能力，做出餐廳介紹網站</p>
+                            <h5>使用技術</h5>
+                            <p>使用HTML5 ＋ CSS3 ＋ jQuery  + JavaScript＋ Bootstrap 實作網頁</p>
+                            <p>使用第三方Google Map API嵌入網頁</p>
+                            <p>利用Github連結Heroku建立網頁，使用Github做程式維護</p>
+                            <ul>
+                                <li>
+                                    <a href="https://github.com/brookhaven13/mrpepperfood">
+                                        <ion-icon name="logo-github"></ion-icon>
+                                        <p>Github程式碼</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://mrpepper.herokuapp.com/index.html">
+                                        <ion-icon name="link"></ion-icon>
+                                        <p>網站連結</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        
+                        
+                        <li class="websites span-3-of-12">
+                            <a data-fancybox data-src="#hidden-content-4" href="javascript:;">
+                                <img class="thumbnails" src="resources/img/portfolio/adrop-website.jpg" width="500">
+                            </a>
+                        </li>
+                        <div class="portfolio-infobox" style="display: none;" id="hidden-content-4">
+                            <img src="resources/img/portfolio/adrop-website.jpg">
+                            <h2>網站：保養品網站設計</h2>
+                            <h5>應用程式構思</h5>
+                            <p>朋友創業賣面膜和保養品，幫忙朋友做的官方網站，由於鎖定客戶為南非客戶，所以網站使用全英文</p>
+                            <h5>使用技術</h5>
+                            <p>使用HTML5 ＋ CSS3 ＋ jQuery  + JavaScript＋ Bootstrap 實作網頁</p>
+                            <p>使用第三方Google Map API嵌入網頁</p>
+                            <p>利用Github連結Heroku建立網頁，使用Github做程式維護</p>
+                            <ul>
+                                <li>
+                                    <a href="https://github.com/brookhaven13/adropmask_webpage">
+                                        <ion-icon name="logo-github"></ion-icon>
+                                        <p>Github程式碼</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://adropmask.herokuapp.com/index.html">
+                                        <ion-icon name="link"></ion-icon>
+                                        <p>網站連結</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
     <!----------------- CONTACT ME ---------------->
     <ul class="social-links ">
         <li><a href="https://www.linkedin.com/in/yu-hsuan-lin-4034b1157/" title="LinkedIn" target="_blank"><i class="icon ion-logo-linkedin"></i></a></li>
@@ -310,6 +466,9 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    <script type="text/javascript" src="https://unpkg.com/isotope-layout@3.0.6/dist/isotope.pkgd.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
     <script src="https://use.typekit.net/bkt6ydm.js"></script>
     <script>
         try {
