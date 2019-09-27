@@ -1,10 +1,11 @@
         body {
-            font-family: 'Roboto Condensed', sans-serif;
+            font-family: 'Lato', 'Montserrat';
             background-image: linear-gradient(to bottom, #333e4e, rgba(255, 255, 255, 0.6)100%), url('/resources/img/slide6.jpg');
-            background-size:cover;
+            background-size: cover;
             background-repeat: no-repeat;
             background-attachment: fixed;
             color: #6f6f6f;
+            
         }
 
         .main-title {
@@ -37,11 +38,12 @@
 
 
         .works .filtering span {
+            font-family: 'Lato';
             background: #FFF;
             text-transform: uppercase;
             cursor: pointer;
             font-size: 13px;
-            font-weight: 600;
+            font-weight: 700;
             margin: 0 5px;
             padding: 15px 20px;
             transition: all 0.3s ease 0s;
@@ -143,22 +145,6 @@
         }
 
 
-
-        .works .item-img-overlay .icon-1,
-.works .item-img-overlay .icon-2, 
-.works .item-img-overlay .icon-3{
-            
-            color: #eee;
-            font-size: 24px;
-            height: 24px;
-            line-height: 24px;
-            right: 30px;
-            text-align: center;
-            width: 24px;
-        }
-
-
-
         .works .item-img-overlay p {
             color: #f2f2f2;
             font-weight: 400;
@@ -182,3 +168,39 @@
 
 
         }
+
+
+
+
+        .works .item-img-overlay .icon-1,
+        .works .item-img-overlay .icon-2,
+        .works .item-img-overlay .icon-3 {
+
+            color: #eee;
+            font-size: 24px;
+            height: 24px;
+            line-height: 24px;
+            right: 30px;
+            text-align: center;
+            width: 24px;
+        }
+
+        .works .item-img-overlay .icon-1:hover,
+        .works .item-img-overlay .icon-2:hover,
+        .works .item-img-overlay .icon-3:hover {
+            text-decoration: none;
+        }
+
+.back-icon {
+    padding: 10px 20px;
+    color: #fff;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.back-icon:hover {
+    color: #dfe6e9;
+    cursor: pointer;
+    text-decoration: none;
+    
+}
