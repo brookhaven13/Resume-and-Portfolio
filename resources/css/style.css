@@ -93,7 +93,7 @@ body {
     display: inline;
     padding: 0 15px;
     color: #C2E888;
-    font-family: 'Montserrat'
+    font-family: 'Montserrat', 'Noto Sans TC';
 }
 
 /*-------------- SELF INFO  ------------*/
@@ -102,8 +102,9 @@ body {
 .section-self-intro {
     padding: 30px 0;
     background-image: linear-gradient(to bottom, rgba(227, 227, 227, 0.5), rgba(227, 227, 227, 0.8)100%), url('/resources/img/slide6.jpg');
-      background-repeat: no-repeat;
-  background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
     color: #6f6f6f;
 }
 
@@ -162,7 +163,7 @@ body {
     }
 --*/
 
-.download-link {
+.info-link {
     text-decoration: none;
     color: #666;
     padding: 15px 20px;
@@ -172,7 +173,7 @@ body {
     border-radius: 3px;
 }
 
-.download-link:hover {
+.info-link:hover {
     text-decoration: inherit;
     color: #FFF;
     background-color: #8b98ac;
@@ -181,8 +182,15 @@ body {
 
 .download-cv {
     font-weight: 600;
+    padding: 5px;
+    text-align: right;
 }
 
+.portfolio-button {
+    text-align: left;
+    font-weight: 600;
+    padding: 5px;
+}
 
 
 /*------------------------ 自傳 ----------------------*/
@@ -192,7 +200,7 @@ body {
 }
 
 .main-title {
-    padding: 0 0 10px 0;
+    padding: 10px 0;
     font-family: 'Montserrat', 'Noto Sans TC';
     font-weight: 700;
     letter-spacing: 8px;
@@ -339,7 +347,7 @@ body {
     display: block;
 }
 
-.filter li{
+.filter li {
     font-weight: 400;
     display: inline-block;
     padding: 5px;
@@ -350,6 +358,42 @@ body {
     border-color: #ed7575;
     color: #fff;
 }
+
+.items-container {
+    width: 120%;
+}
+
+
+.items li {
+    display: inline-block;
+    padding: 5px;
+}
+
+
+.items li img {
+    width: 100%;
+}
+
+.items .item {
+    position: relative;
+    display: block;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /*----------------- Styling social icons -------------*/
@@ -402,4 +446,3 @@ body {
 .ion-md-mail:hover {
     color: #ea4335;
 }
-
